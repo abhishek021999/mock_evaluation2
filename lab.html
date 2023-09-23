@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <style>
+            #parent1{
+                /* border: 1px solid red; */
+                width: 100%;
+                height:auto;
+                display: flex;
+                justify-content:space-between;
+
+            }
+            .studylab{
+                /* border: 1px solid blue; */
+                width: 10%;
+                height: auto;
+                /* margin: auto; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 60px;
+                background-color: rgb(110,108,229);
+                  
+            }
+            .anchor{
+                /* border: 1px solid blue; */
+                width: 40%;
+                height: auto;
+                /* margin: auto; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center; 
+                margin-right: 100px;
+            }
+            h3{
+                text-align: center;
+                font-weight: bolder;
+                font-size: x-large;
+                color: rgb(254,255,254);
+            }
+            a{
+                text-decoration: none;
+                color: rgb(38,38,38);
+                font-weight: bold;
+                font-size: large;
+                
+            }
+            a:hover{
+                color:red;
+            }
+            span{
+                color: rgb(74,133,252);
+            }
+
+
+            #parent2{
+                /* border: 2px solid green; */
+                width: 100%;
+                height:700px;
+                margin-top: 20px;
+                display:flex;
+                justify-content: space-between;
+            }
+            .child1{
+                /* border: 1px solid yellow; */
+                width:40% ;
+                height:auto;
+                margin-left: 60px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+            .child2{
+                /* border: 1px solid yellow; */
+                width: 40%;
+                height:auto;
+                margin-right: 100px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,250px);
+                gap: 20px 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+                
+                
+                
+                
+            }
+            #welcome{
+                margin-top: 100px;
+                color: rgb(75,133,251);
+                font-weight: bold;
+            }
+            h1{
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+            .para{
+                font-size: large;
+                font-weight:bolder;
+                line-height:2;
+                color: rgb(174,174,174);
+            }
+            .img{
+                width: 200px;
+                height:auto;
+            }
+            .img_tag{
+                /* border: 1px solid blue; */
+                width:100%;
+                height:auto;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .img_tag>div{
+                /* border: 1px solid red; */
+                width:47%;
+                height:auto;
+            }
+            .img_tag>div>a>img{
+                width: 100%;
+                height:auto;
+            }
+            #parent2>.child2>div{
+                /* border: 1px solid red; */
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                
+                
+            }
+            #parent2>.child2>div>img{
+                width:30%;
+                border-radius: 50%;
+                margin-left: 20px;
+                
+            }
+            #parent2>.child2>div>p{
+                margin-left: 20px;
+                font-weight: bolder;
+                font-size:20px;
+            }
+            #parent2>.child2>div>.p2{
+                 font-size:large;
+                 color: rgb(186,186,186);
+            }
+
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="parent1">
+            <div class="studylab">
+                <h3>StudyLab</h3>
+            </div>
+            <div class="anchor">
+                <a href=""><span>Home</span></a>
+                <a href="">About</a>
+                <a href="">Course</a>
+                <a href="">Instructor</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+
+            </div>
+        </div>
+        
+        
+        <div id="parent2">
+            <div class="child1">
+                <p id="welcome">WELCOME TO STUDYLAB</p>
+                <h1>We Are StudyLab An Online <br> Learning Centre</h1>
+                <p class="para">A small river named Duden flows by their place and supplies it <br> with the necessary regelialia.It is a paradisematic country,in <br> which roasted parts of sentences fly into your mouth.</p>
+                <p class="para">Far far away,behind the word mountains,far from the <br> countries Vokalia and Consonantia,there live the blind texts. <br> Separated they live in Bookmarksgrove right at the coast of the <br> Semantics, a large language ocean.</p>
+                
+                <div class="img_tag">
+                    <div>
+                       <a href="https://www.youtube.com/watch?v=Ho4c7JxhQNw"><img src="https://www.datocms-assets.com/14946/1679327569-blog-annelore.png?auto=format&corner-radius=16&fit=crop&h=312&mask=corners&q=45&w=568&dpr=2" alt=""></a>
+                    </div>
+                    <div>
+                        <h4 style="margin-top: 30%;font-weight: bolder;color: rgb(53,53,54);">Learn any thing from StudyLab,<br>Watch Video</h4>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="child2">
+                <div>
+                    <img src="https://img.freepik.com/free-vector/golden-seal-premium-products_1017-5137.jpg?w=740&t=st=1694143681~exp=1694144281~hmac=7f6ac05f1cdc2b44e3073144ad52a16278416de9a62f72270e567a98309adc41" alt="">
+                    <p>Top Quality Content</p>
+                    <p class="p2">A small river named <br>Duden flows by their <br> place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://w7.pngwing.com/pngs/612/725/png-transparent-coaching-personal-trainer-professional-certification-training-clore-leadership-programme-text-orange-logo.png" alt="">
+                    <p>Highly Skilled Instructor</p>
+                    <p class="p2">A small river named <br>Duden flows by their <br> place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJigwG5usmr-LV4KLcrkEYVVjFsKdo-q8Ow&usqp=CAU" alt="">
+                    <p>World Class & Quiz</p>
+                    <p class="p2">A small river named <br>Duden flows by their <br> place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://intelitek.com/wp-content/uploads/2019/12/Certification-Logo-150x150.jpeg" alt="">
+                    <p>Get Certified</p>
+                    <p class="p2">A small river named <br>Duden flows by their <br> place and supplies</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+
+
+    </body>
+</html>
